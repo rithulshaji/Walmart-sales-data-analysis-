@@ -40,11 +40,16 @@ The dataset contains 17 columns and 1000 rows, including information such as inv
 
 ## Approach
 
-1. **Data Wrangling:** Ensuring data quality by handling NULL values and missing data.
-2. **Feature Engineering:** Creating new columns to derive insights from existing data.
-3. **Exploratory Data Analysis (EDA):** Analyzing data to answer project objectives.
+1. **Data Wrangling:** This initial phase involves scrutinizing the data to detect and handle any null or missing values. The process includes building a database, creating tables, and inserting data. By setting fields as **NOT NULL** during table creation, the database filters out null values.
+   
+2. **Feature Engineering:** This step focuses on creating new columns derived from existing data to enhance insights:
+   - Introduce `time_of_day` column categorizing sales into Morning, Afternoon, and Evening. This sheds light on the peak sales periods during the day.
+   - Add `day_name` column extracting the day of the week for each transaction (Mon, Tue, Wed, Thur, Fri). This aids in identifying the busiest days for each branch.
+   - Implement `month_name` column to extract months of the year from transaction dates (Jan, Feb, Mar), facilitating analysis of monthly sales and profit trends.
 
-## Business Questions
+3. **Exploratory Data Analysis (EDA):**  This phase involves a comprehensive exploration of the dataset to address the project's questions and objectives. EDA aims to extract meaningful insights by examining and visualizing the data to uncover patterns, trends, and relationships within the dataset.
+
+## Questions
 
 ### Generic
 
